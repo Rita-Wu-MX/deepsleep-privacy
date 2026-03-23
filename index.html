@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — DeepSleep</title>
+  <style>
+    :root {
+      --bg: #0d0d1a;
+      --card: #1a1a2e;
+      --accent: #7b7fff;
+      --text: #e8e8f0;
+      --muted: #888899;
+      --border: rgba(255,255,255,0.07);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header .moon {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    section p, section li {
+      font-size: 15px;
+      color: var(--text);
+      opacity: 0.85;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(123, 127, 255, 0.15);
+      color: var(--accent);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      color: var(--muted);
+      font-weight: 600;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      opacity: 0.85;
+    }
+
+    td:last-child {
+      color: #6ddc8b;
+    }
+
+    td.no { color: #777; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <span class="moon">🌙</span>
+      <h1>Privacy Policy</h1>
+      <p>DeepSleep · Last updated: March 2026</p>
+    </header>
+
+    <!-- Overview -->
+    <section>
+      <h2>Overview</h2>
+      <p>
+        DeepSleep is a sleep sounds and guided meditation app. We are committed to protecting
+        your privacy. <strong>DeepSleep does not collect, store, or share any personal
+        information.</strong> All audio content runs entirely on your device.
+      </p>
+    </section>
+
+    <!-- Data We Do NOT Collect -->
+    <section>
+      <h2>Data We Do Not Collect</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Collected?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Name, email, or account info</td><td class="no">✗ Never</td></tr>
+          <tr><td>Location data</td><td class="no">✗ Never</td></tr>
+          <tr><td>Health or fitness data</td><td class="no">✗ Never</td></tr>
+          <tr><td>Device identifiers or advertising IDs</td><td class="no">✗ Never</td></tr>
+          <tr><td>Usage analytics or crash reports</td><td class="no">✗ Never</td></tr>
+          <tr><td>Microphone or camera access</td><td class="no">✗ Never</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- In-App Purchases -->
+    <section>
+      <h2>In-App Purchases</h2>
+      <p>
+        DeepSleep offers optional, one-time tip purchases (<span class="badge">Tip Jar</span>)
+        processed entirely by Apple. We never see or store your payment information.
+        Purchase history is managed by Apple and is subject to
+        <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.
+      </p>
+      <ul style="margin-top: 12px;">
+        <li>All transactions are handled by Apple's StoreKit framework.</li>
+        <li>Tips are consumable purchases — no content is locked or unlocked.</li>
+        <li>No restore functionality is required or provided.</li>
+      </ul>
+    </section>
+
+    <!-- Audio & Permissions -->
+    <section>
+      <h2>Audio &amp; Permissions</h2>
+      <p>
+        All audio files (nature sounds, zen tones, and guided meditation tracks) are bundled
+        within the app. No streaming, no internet connection required for playback.
+        DeepSleep requests only the following system permission:
+      </p>
+      <ul style="margin-top: 12px;">
+        <li>
+          <span class="badge">Audio Playback</span>
+          Background audio via <code>AVAudioSession</code> — required to continue playing
+          when the screen is locked.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Third-Party Services -->
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>
+        DeepSleep does not integrate any third-party SDKs, analytics services, advertising
+        networks, or social login providers. The only external service used is
+        <strong>Apple's StoreKit</strong> for in-app purchases, governed by Apple.
+      </p>
+    </section>
+
+    <!-- Children's Privacy -->
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        DeepSleep is rated <span class="badge">4+</span> and is safe for all ages.
+        Because we collect no personal data, there are no special risks for children.
+      </p>
+    </section>
+
+    <!-- Changes to This Policy -->
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>
+        If we update this privacy policy, we will revise the "Last updated" date at the top
+        of this page. Continued use of the app after any changes constitutes acceptance of
+        the new policy.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this privacy policy, please reach out:
+        <br /><br />
+        📧 <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 DeepSleep. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
